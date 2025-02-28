@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Школа подготовки к ВПР</title>
+    
+    <!-- Подключение Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Подключение Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Подключение основного стиля -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contact.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__content">
+            <div class="header__logo">
+                <img src="images/logo.jpg" alt="Логотип школы ВПР" width="200" height="auto">
+            </div>
+            <nav class="header__nav">
+                <ul class="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="#">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="contact-section__title">Свяжитесь с нами</h2>
+
+                <div class="contact-info">
+                    <p class="contact-info__description">
+                        Наша команда всегда готова помочь вам! Если у вас есть вопросы, предложения или просьбы,
+                        не стесняйтесь обращаться к нам. Мы ответим на все ваши запросы как можно скорее.
+                    </p>
+                    <div class="contact-info__details">
+                        <div class="contact-info__address">
+                            <h3>Наш Адрес:</h3>
+                            <p>Москва, ул. Пушкина, д. 10</p>
+                        </div>
+                        <div class="contact-info__phone">
+                            <h3>Телефон:</h3>
+                            <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                        </div>
+                        <div class="contact-info__email">
+                            <h3>Email:</h3>
+                            <p><a href="mailto:info@vprschool.ru">info@vprschool.ru</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Форма обратной связи</h3>
+                    <form action="submit_form.php" method="post">
+                        <div class="contact-form__field">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="contact-form__field">
+                            <label for="email">Ваш Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="contact-form__field">
+                            <label for="message">Ваше сообщение:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="contact-form__submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Школа подготовки к ВПР. Все права защищены.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>

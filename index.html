@@ -2,78 +2,135 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Школа подготовки к ВПР</title>
-    
-    <!-- Подключение красивого шрифта с Google Fonts -->
+
+    <!-- Подключение Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <style>
-        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
-        header, footer { background: #f8f9fa; padding: 15px; }
-        .container { width: 90%; margin: auto; }
-        .header-content, .footer-content, .main-content { display: flex; justify-content: space-between; align-items: center; }
-        .menu { list-style: none; display: flex; gap: 15px; }
-        .menu li { display: inline; }
-        .banner { background: #e9ecef; padding: 30px; text-align: center; margin: 20px 0; }
-        .courses { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        .course-card { border: 1px solid #ddd; padding: 15px; text-align: center; }
-        .sidebar { width: 25%; padding: 15px; border-left: 1px solid #ddd; }
-        .content-wrapper { display: flex; }
-        .main { width: 75%; }
-    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container header-content">
-            <div class="logo">Логотип</div>
-            <nav>
+
+    <header class="header">
+        <div class="container header__content">
+            <!-- Логотип -->
+            <div class="header__logo">
+                <img src="images/logo.jpg" alt="Логотип школы ВПР" width="200" height="auto">
+            </div>
+
+            <!-- Заголовок страницы -->
+            <h1 class="header__title">Школа подготовки к ВПР</h1>
+
+            <!-- Навигационное меню -->
+            <nav class="header__nav">
                 <ul class="menu">
-                    <li>Главная</li>
-                    <li>Курсы</li>
-                    <li>О нас</li>
-                    <li>Контакты</li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="#">Личный кабинет</a></li>
                 </ul>
             </nav>
-            <div>
+
+            <!-- Поиск -->
+            <div class="header__search-wrapper">
                 <input type="text" placeholder="Поиск...">
-                <button>Войти</button>
+                <button type="button" class="header__search-button">🔍</button>
             </div>
         </div>
     </header>
+
     <main>
         <div class="container">
+            <!-- Баннер -->
             <section class="banner">
-                <h2>Акции и специальные предложения</h2>
+                <h2 class="banner__title">Акции и специальные предложения</h2>
             </section>
+
             <div class="content-wrapper">
+                <!-- Основной контент -->
                 <section class="main">
-                    <h2>Наши курсы</h2>
+                    <h2 class="main__title">Наши курсы</h2>
                     <div class="courses">
-                        <div class="course-card">Курс 1</div>
-                        <div class="course-card">Курс 2</div>
-                        <div class="course-card">Курс 3</div>
+                        <div class="courses__course-card">
+                            <img src="images/course1.jpg" alt="Курс по математике" width="300" height="auto">
+                            <h3 class="courses__course-title">Математика ВПР 5 класс</h3>
+                            <p class="courses__course-description">Подготовка к ВПР по математике. Разбор всех тем с опытными преподавателями.</p>
+                        </div>
+                        <div class="courses__course-card">
+                            <img src="images/course2.jpg" alt="Курс по русскому языку" width="300" height="auto">
+                            <h3 class="courses__course-title">Русский язык ВПР 6 класс</h3>
+                            <p class="courses__course-description">Полный курс по грамматике, пунктуации и правописанию.</p>
+                        </div>
+                        <div class="courses__course-card">
+                            <img src="images/course3.jpg" alt="Курс по окружающему миру" width="300" height="auto">
+                            <h3 class="courses__course-title">Окружающий мир ВПР 4 класс</h3>
+                            <p class="courses__course-description">Интересный и познавательный курс для младших школьников.</p>
+                        </div>
                     </div>
+
+                    <!-- Рекомендованные курсы -->
+                    <section class="recommended-courses">
+                        <h3 class="recommended-courses__title">Рекомендованные курсы</h3>
+                        <div class="recommended-courses__course-card">
+                            <img src="images/course4.jpg" alt="Курс по географии" width="300" height="auto">
+                            <div class="recommended-courses__course-info">
+                                <h4 class="recommended-courses__course-title">География ВПР 8 класс</h4>
+                                <p class="recommended-courses__course-description">Полный курс для уверенной подготовки к ВПР.</p>
+                            </div>
+                        </div>
+                        <div class="recommended-courses__course-card">
+                            <img src="images/course5.jpg" alt="Курс по истории" width="300" height="auto">
+                            <div class="recommended-courses__course-info">
+                                <h4 class="recommended-courses__course-title">История ВПР 7 класс</h4>
+                                <p class="recommended-courses__course-description">Разбор всех исторических эпох и ключевых событий.</p>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-                <aside class="sidebar">
-                    <h3>Рекомендованные курсы</h3>
-                    <ul>
-                        <li>Курс A</li>
-                        <li>Курс B</li>
-                    </ul>
-                    <h3>Подписка на рассылку</h3>
-                    <input type="email" placeholder="Ваш email">
-                    <button>Подписаться</button>
+
+                <!-- Форма обратной связи -->
+                <aside class="contact-form">
+                    <h2 class="contact-form__title">Свяжитесь с нами</h2>
+                    <form action="submit_form.php" method="post">
+                        <label for="name" class="contact-form__label">Имя:</label>
+                        <input type="text" id="name" name="name" class="contact-form__input" required>
+
+                        <label for="email" class="contact-form__label">Email:</label>
+                        <input type="email" id="email" name="email" class="contact-form__input" required>
+
+                        <button type="submit" class="contact-form__button">Отправить</button>
+                    </form>
                 </aside>
             </div>
         </div>
     </main>
-    <footer>
-        <div class="container footer-content">
-            <div>Контакты</div>
-            <div>Социальные сети</div>
-            <div>Карта сайта</div>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="footer__section">
+                <h4 class="footer__title">Контакты</h4>
+                <p><a href="mailto:info@vprschool.ru" class="footer__link">info@vprschool.ru</a></p>
+                <p><a href="tel:+79991234567" class="footer__link">+7 (999) 123-45-67</a></p>
+            </div>
+            <div class="footer__section">
+                <h4 class="footer__title">Социальные сети</h4>
+                <p><a href="#" class="footer__link">VK</a> | <a href="#" class="footer__link">Telegram</a> | <a href="#" class="footer__link">Instagram</a></p>
+            </div>
+            <div class="footer__section">
+                <h4 class="footer__title">Карта сайта</h4>
+                <p><a href="#" class="footer__link">Главная</a> | <a href="#" class="footer__link">Курсы</a> | <a href="#" class="footer__link">Контакты</a></p>
+            </div>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
+
+
 </body>
 </html>

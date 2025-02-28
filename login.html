@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет | ВПР</title>
+
+    <!-- Подключение Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Подключение normalize.css для сброса стилей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Подключение основного стиля -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Подключение стилей для страницы логина -->
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <img src="images/logo.jpg" alt="Логотип школы ВПР" width="200" height="auto">
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="login.html" class="active">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="login-form">
+                <h2>Вход в личный кабинет</h2>
+                <form id="loginForm">
+                    <label for="username">Логин:</label>
+                    <input type="text" id="username" name="username" placeholder="Введите логин" required>
+
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+                    <button type="submit" class="login-form__button">Войти</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Школа подготовки к ВПР. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
