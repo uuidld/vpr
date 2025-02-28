@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devic">
+    <title>Школа подготовки к ВПР</title>
+    
+    <!-- Подключение красивого шрифта с Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
+        header, footer { background: #f8f9fa; padding: 15px; }
+        .container { width: 90%; margin: auto; }
+        .header-content, .footer-content, .main-content { display: flex; justify-content: space-between; align-items: center; }
+        .menu { list-style: none; display: flex; gap: 15px; }
+        .menu li { display: inline; }
+        .banner { background: #e9ecef; padding: 30px; text-align: center; margin: 20px 0; }
+        .courses { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .course-card { border: 1px solid #ddd; padding: 15px; text-align: center; }
+        .sidebar { width: 25%; padding: 15px; border-left: 1px solid #ddd; }
+        .content-wrapper { display: flex; }
+        .main { width: 75%; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">Логотип</div>
+            <nav>
+                <ul class="menu">
+                    <li>Главная</li>
+                    <li>Курсы</li>
+                    <li>О нас</li>
+                    <li>Контакты</li>
+                </ul>
+            </nav>
+            <div>
+                <input type="text" placeholder="Поиск...">
+                <button>Войти</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="banner">
+                <h2>Акции и специальные предложения</h2>
+            </section>
+            <div class="content-wrapper">
+                <section class="main">
+                    <h2>Наши курсы</h2>
+                    <div class="courses">
+                        <div class="course-card">Курс 1</div>
+                        <div class="course-card">Курс 2</div>
+                        <div class="course-card">Курс 3</div>
+                    </div>
+                </section>
+                <aside class="sidebar">
+                    <h3>Рекомендованные курсы</h3>
+                    <ul>
+                        <li>Курс A</li>
+                        <li>Курс B</li>
+                    </ul>
+                    <h3>Подписка на рассылку</h3>
+                    <input type="email" placeholder="Ваш email">
+                    <button>Подписаться</button>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <div>Контакты</div>
+            <div>Социальные сети</div>
+            <div>Карта сайта</div>
+        </div>
+    </footer>
+</body>
+</html>
