@@ -1,136 +1,217 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Школа подготовки к ВПР</title>
-
-    <!-- Подключение Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-
-    <!-- Подключение CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Инновационный центр подготовки к ВПР</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="container header__content">
-            <!-- Логотип -->
-            <div class="header__logo">
-                <img src="images/logo.jpg" alt="Логотип школы ВПР" width="200" height="auto">
-            </div>
+  <!-- Header с навигацией -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">PrepVPR</div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#how-it-works">Как это работает</a></li>
+          <li><a href="#courses">Курсы</a></li>
+          <li><a href="#calculator">Калькулятор</a></li>
+          <li><a href="#testimonials">Отзывы</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <!-- Заголовок страницы -->
-            <h1 class="header__title">Школа подготовки к ВПР</h1>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content container">
+      <h1>Готовься к ВПР по-новому!</h1>
+      <p>Инновационная онлайн платформа с интерактивными уроками, практическими заданиями и экспертными рекомендациями – всё для твоего успеха!</p>
+      <button class="btn-main" onclick="scrollToSection('courses')">Начать обучение</button>
+    </div>
+  </section>
 
-            <!-- Навигационное меню -->
-            <nav class="header__nav">
-                <ul class="menu">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="courses.html">Курсы</a></li>
-                    <li><a href="about.html">О нас</a></li>
-                    <li><a href="contact.html">Контакты</a></li>
-                    <li><a href="#">Личный кабинет</a></li>
-                </ul>
-            </nav>
-
-            <!-- Поиск -->
-            <div class="header__search-wrapper">
-                <input type="text" placeholder="Поиск...">
-                <button type="button" class="header__search-button">🔍</button>
-            </div>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>О нашей платформе</h2>
+      <p>Мы предлагаем уникальный опыт подготовки к ВПР, совмещая современные образовательные технологии с глубоким анализом требований экзамена. Наш центр создаёт комфортную и интерактивную образовательную среду, где каждый студент получает персональные рекомендации.</p>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">&#128187;</div>
+          <h3>Интерактивное обучение</h3>
+          <p>Мультимедийные уроки, практические задания и онлайн тестирование – всё для глубокого усвоения материала.</p>
         </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <!-- Баннер -->
-            <section class="banner">
-                <h2 class="banner__title">Акции и специальные предложения</h2>
-            </section>
-
-            <div class="content-wrapper">
-                <!-- Основной контент -->
-                <section class="main">
-                    <h2 class="main__title">Наши курсы</h2>
-                    <div class="courses">
-                        <div class="courses__course-card">
-                            <img src="images/course1.jpg" alt="Курс по математике" width="300" height="auto">
-                            <h3 class="courses__course-title">Математика ВПР 5 класс</h3>
-                            <p class="courses__course-description">Подготовка к ВПР по математике. Разбор всех тем с опытными преподавателями.</p>
-                        </div>
-                        <div class="courses__course-card">
-                            <img src="images/course2.jpg" alt="Курс по русскому языку" width="300" height="auto">
-                            <h3 class="courses__course-title">Русский язык ВПР 6 класс</h3>
-                            <p class="courses__course-description">Полный курс по грамматике, пунктуации и правописанию.</p>
-                        </div>
-                        <div class="courses__course-card">
-                            <img src="images/course3.jpg" alt="Курс по окружающему миру" width="300" height="auto">
-                            <h3 class="courses__course-title">Окружающий мир ВПР 4 класс</h3>
-                            <p class="courses__course-description">Интересный и познавательный курс для младших школьников.</p>
-                        </div>
-                    </div>
-
-                    <!-- Рекомендованные курсы -->
-                    <section class="recommended-courses">
-                        <h3 class="recommended-courses__title">Рекомендованные курсы</h3>
-                        <div class="recommended-courses__course-card">
-                            <img src="images/course4.jpg" alt="Курс по географии" width="300" height="auto">
-                            <div class="recommended-courses__course-info">
-                                <h4 class="recommended-courses__course-title">География ВПР 8 класс</h4>
-                                <p class="recommended-courses__course-description">Полный курс для уверенной подготовки к ВПР.</p>
-                            </div>
-                        </div>
-                        <div class="recommended-courses__course-card">
-                            <img src="images/course5.jpg" alt="Курс по истории" width="300" height="auto">
-                            <div class="recommended-courses__course-info">
-                                <h4 class="recommended-courses__course-title">История ВПР 7 класс</h4>
-                                <p class="recommended-courses__course-description">Разбор всех исторических эпох и ключевых событий.</p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-
-                <!-- Форма обратной связи -->
-                <aside class="contact-form">
-                    <h2 class="contact-form__title">Свяжитесь с нами</h2>
-                    <form action="submit_form.php" method="post">
-                        <label for="name" class="contact-form__label">Имя:</label>
-                        <input type="text" id="name" name="name" class="contact-form__input" required>
-
-                        <label for="email" class="contact-form__label">Email:</label>
-                        <input type="email" id="email" name="email" class="contact-form__input" required>
-
-                        <button type="submit" class="contact-form__button">Отправить</button>
-                    </form>
-                </aside>
-            </div>
+        <div class="feature">
+          <div class="feature-icon">&#128218;</div>
+          <h3>Актуальные курсы</h3>
+          <p>Мы постоянно обновляем программы, чтобы соответствовать последним требованиям ВПР и школьных стандартов.</p>
         </div>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer__content">
-            <div class="footer__section">
-                <h4 class="footer__title">Контакты</h4>
-                <p><a href="mailto:info@vprschool.ru" class="footer__link">info@vprschool.ru</a></p>
-                <p><a href="tel:+79991234567" class="footer__link">+7 (999) 123-45-67</a></p>
-            </div>
-            <div class="footer__section">
-                <h4 class="footer__title">Социальные сети</h4>
-                <p><a href="#" class="footer__link">VK</a> | <a href="#" class="footer__link">Telegram</a> | <a href="#" class="footer__link">Instagram</a></p>
-            </div>
-            <div class="footer__section">
-                <h4 class="footer__title">Карта сайта</h4>
-                <p><a href="#" class="footer__link">Главная</a> | <a href="#" class="footer__link">Курсы</a> | <a href="#" class="footer__link">Контакты</a></p>
-            </div>
+        <div class="feature">
+          <div class="feature-icon">&#128202;</div>
+          <h3>Персональный подход</h3>
+          <p>Постоянная поддержка экспертов и индивидуальные рекомендации помогут тебе достичь максимальных результатов.</p>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/script.js"></script>
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <h2>Как это работает</h2>
+      <div class="steps">
+        <div class="step" data-label="Выбери курс">1</div>
+        <div class="step" data-label="Изучай уроки">2</div>
+        <div class="step" data-label="Практикуйся">3</div>
+        <div class="step" data-label="Достигай успеха">4</div>
+      </div>
+    </div>
+  </section>
+
+<!-- Courses Section -->
+<section id="courses" class="courses">
+  <div class="container">
+    <h2>Наши курсы</h2>
+    <div class="course-list">
+      <div class="course-item">
+        <img src="images/course1.jpg" alt="Математика" class="course-image"> <!-- Картинка курса -->
+        <div class="course-content">
+          <h3>Математика</h3>
+          <p>Подробный интерактивный курс с примерами, задачами и тестами для глубокого освоения математики.</p>
+          <button class="btn-details">Подробнее</button>
+          <div class="course-details">
+            <p>Этот курс включает в себя углубленные темы по математике, разнообразные практические задания и подробные решения. Вы получите все необходимые навыки для успешного прохождения ВПР.</p>
+          </div>
+        </div>
+      </div>
+      <div class="course-item">
+        <img src="images/course2.jpg" alt="Русский язык" class="course-image"> <!-- Картинка курса -->
+        <div class="course-content">
+          <h3>Русский язык</h3>
+          <p>Углубленный анализ грамматики, орфографии и литературы для подготовки к ВПР.</p>
+          <button class="btn-details">Подробнее</button>
+          <div class="course-details">
+            <p>Курс охватывает все аспекты русского языка, от грамматики до литературы. Вы научитесь правильно писать, строить сложные предложения и разбирать текст на составляющие.</p>
+          </div>
+        </div>
+      </div>
+      <div class="course-item">
+        <img src="images/course3.jpg" alt="Окружающий мир" class="course-image"> <!-- Картинка курса -->
+        <div class="course-content">
+          <h3>Окружающий мир</h3>
+          <p>Интерактивный курс, где познавательные лекции и задания делают обучение интересным и эффективным.</p>
+          <button class="btn-details">Подробнее</button>
+          <div class="course-details">
+            <p>Курс охватывает темы по биологии, экологии и окружающему миру. Вы научитесь решать задачи, проводить эксперименты и задавать правильные вопросы на уроках науки.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <h2>Отзывы выпускников</h2>
+    <!-- Контейнер слайдера -->
+    <div class="testimonial-slider">
+      <div class="testimonial">
+        <p>«Благодаря курсам PrepVPR я освоил сложные темы и сдал экзамен с отличием. Интерактивные методики делают обучение живым!»</p>
+        <span>— Мария, выпускница</span>
+      </div>
+      <div class="testimonial">
+        <p>«Уникальный контент и персональный подход позволили мне понять, как правильно готовиться к экзамену. Рекомендую всем!»</p>
+        <span>— Аня, студент</span>
+      </div>
+      <div class="testimonial">
+        <p>«Очень крутые курсы, которые помогли мне сдать экзамен на высокий балл. Весь материал подается понятно и доступно.»</p>
+        <span>— Валерия, студент</span>
+      </div>
+    </div>
+    <!-- Кнопки переключения слайдов -->
+    <button class="prev">←</button>
+    <button class="next">→</button>
+  </div>
+</section>
+
+
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2>Часто задаваемые вопросы</h2>
+      <div class="faq-item">
+        <h3>Как записаться на курс?</h3>
+        <p>Выберите интересующий вас курс, перейдите на страницу курса и заполните форму записи или свяжитесь с нашим менеджером.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Можно ли пройти пробное занятие?</h3>
+        <p>Да, мы предлагаем бесплатное пробное занятие, чтобы вы могли оценить качество и формат наших уроков.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Как получить дополнительную поддержку?</h3>
+        <p>Свяжитесь с нами через форму обратной связи, и наш эксперт свяжется с вами для персональных рекомендаций.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Calculator Section -->
+<section id="calculator" class="calculator">
+  <div class="container">
+    <h2>Калькулятор прогноза баллов на экзамене</h2>
+    <p>Используйте наш интерактивный калькулятор, чтобы спрогнозировать ваш балл на экзамене. Введите количество заданий, максимальный балл за каждое задание и вашу уверенность в правильном выполнении.</p>
+    <div class="calculator-content">
+      <div class="input-group">
+        <label for="tasks">Количество заданий на экзамене:</label>
+        <input type="number" id="tasks" min="1" placeholder="Введите число заданий">
+      </div>
+      <div id="task-inputs"></div>
+      <button class="btn-main" onclick="calculateScore()">Рассчитать</button>
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Связаться с нами</h2>
+      <p>Возникли вопросы или нужна подробная информация? Заполните форму, и мы свяжемся с вами в кратчайшие сроки.</p>
+      <form class="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="contact-name">Ваше имя</label>
+          <input type="text" id="contact-name" name="contact-name" placeholder="Введите ваше имя" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="contact-email" placeholder="Введите ваш email" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Сообщение</label>
+          <textarea id="contact-message" name="contact-message" rows="5" placeholder="Введите ваше сообщение" required></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 PrepVPR. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
 </body>
 </html>

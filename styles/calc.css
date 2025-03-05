@@ -1,0 +1,138 @@
+/* Calculator Section */
+.calculator {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .calculator h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  .calculator p {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .calculator-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  .task-input {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .task-input h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    text-align: left;
+    display: none;
+  }
+  
+  .result h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .result p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #555;
+  }
+  .btn-details {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-details:hover {
+    background-color: #007acc;
+    transform: translateY(-2px); /* Легкое поднимание кнопки при наведении */
+}
+
+/* Эффект для кнопки: плавное появление линии */
+.btn-details::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    bottom: 0;
+    left: -100%;
+    transition: left 0.3s ease;
+}
+
+.btn-details:hover::before {
+    left: 0;
+}
+
+/* Стили для скрытого контента */
+.course-details {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    max-height: 0; /* Начальная высота скрытого блока */
+    overflow: hidden; /* Скрытие содержимого */
+    padding: 0 0 0 20px; /* Дополнительный отступ для эффекта */
+    opacity: 0; /* Скрываем содержимое */
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.3s ease-out;
+}
+
+/* При раскрытии контента */
+.course-details.open {
+    max-height: 300px; /* Максимальная высота для раскрытого контента */
+    padding: 20px; /* Отступы при раскрытии */
+    opacity: 1; /* Показываем содержимое */
+}
